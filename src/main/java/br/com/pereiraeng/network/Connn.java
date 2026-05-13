@@ -5,7 +5,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.Socket;
 
-import br.com.pereiraeng.io.flow.Flow;
+import br.com.pereiraeng.core.Flow;
 
 /**
  * Classe do objeto que guarda o {@link Socket socket} de comunicação entre dois
@@ -16,7 +16,7 @@ import br.com.pereiraeng.io.flow.Flow;
  *
  * @param <K> classe do objeto portador de informação
  */
-public abstract class Connn<K> implements Runnable {
+public abstract class Connn<K> implements Runnable, AutoCloseable {
 
 	/**
 	 * connection to client
@@ -56,9 +56,7 @@ public abstract class Connn<K> implements Runnable {
 		new Thread(this).start();
 	}
 
-	/**
-	 * close streams and socket
-	 */
+	@Override
 	public void close() {
 		try {
 			if (output != null)

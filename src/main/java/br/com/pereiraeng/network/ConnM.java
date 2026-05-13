@@ -7,6 +7,8 @@ import java.io.ObjectOutputStream;
 import java.net.Socket;
 import java.net.SocketException;
 
+import br.com.pereiraeng.core.Flow;
+
 /**
  * Classe do objeto que guarda o {@link Socket socket} de comunicação entre dois
  * interloucutores que trocam {@link Msg mensagens serializadas} e também a

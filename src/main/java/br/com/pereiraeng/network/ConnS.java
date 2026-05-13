@@ -6,6 +6,8 @@ import java.net.SocketException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import br.com.pereiraeng.core.Flow;
+
 /**
  * Classe do objeto que guarda o {@link Socket socket} de comunicação entre dois
  * interloucutores que trocam vetores de bytes e também a {@link Flow referência

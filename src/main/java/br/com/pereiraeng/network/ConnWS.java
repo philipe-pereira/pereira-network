@@ -11,6 +11,8 @@ import java.util.Base64;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import br.com.pereiraeng.core.Flow;
+
 /**
  * Classe do objeto que guarda o {@link Socket socket} de comunicação entre dois
  * interloucutores que trocam
